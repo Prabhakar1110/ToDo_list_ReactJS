@@ -1,0 +1,16 @@
+:root {
+	--theme_1: #0ab6ab;
+	--theme_2: black;
+}
+html {
+  	font-size: 16px;
+}
+body {
+  	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("./assets/bg.jpg");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

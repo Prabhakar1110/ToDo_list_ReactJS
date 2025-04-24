@@ -1,0 +1,77 @@
+.todo {
+    background-color: var(--theme_2);
+    border-radius: 10px;
+    border: 1px dotted var(--theme_2);
+}
+.todo .header {
+    height: 12vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--theme_1);
+}
+.todo .input{
+    height: 5vh;
+}
+.todo .list {
+    height: 65vh;
+    overflow: auto;
+}
+.todo .item {
+    border: 1px solid var(--theme_1);
+}
+.display_time {
+    font-size: 13px;
+    font-weight: bold;
+}
+.delete_icon{
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+.input .item {
+    display: inline-block;
+    width: 70%;
+}
+.input .add_btn {
+    display: inline-block;
+    width: 30%;
+    background-color: var(--theme_1);
+    margin-top: -3px;
+}
+.mark_read {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--theme_1);
+    margin-top: 3px;
+}
+.ellipsis {
+    white-space: nowrap; 
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+/*Media queries-START*/
+@media only screen and (max-width:480px) {
+    .todo {
+        height: 100vh;
+        border-radius: unset;
+        margin-top: 0 !important;
+    }
+    body {
+        background-image: unset;
+    }
+    .todo .header {
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+        background-color: var(--theme_1);
+    }
+    .container {
+        padding: 0;
+    }
+}
+/*Media queries-END*/
