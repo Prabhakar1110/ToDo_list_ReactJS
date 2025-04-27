@@ -34,8 +34,8 @@ const App = ()=> {
     }
 
     const deleteItem = (index)=>{
-        if(confirm("Are you sure to delete?")) {
-            const allTodoItems = JSON.parse(localStorage.getItem("allTodoItems"));
+        const allTodoItems = JSON.parse(localStorage.getItem("allTodoItems"));
+        if(confirm(`Are you sure to delete "${allTodoItems[index]}"?`)) {
             allTodoItems.splice(index,1);
             localStorage.setItem("allTodoItems", JSON.stringify(allTodoItems));
             setItems(JSON.parse(localStorage.getItem("allTodoItems")));
