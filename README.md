@@ -1,3 +1,6 @@
+Any queries?, please reachout to me at, Email: prabasvu@gmail.com Phone: 6381965217
+
+
 1. Project Title: "ToDo List" (using React and "localStorage")
 Live at: https://todo-list-reactjs-theta.vercel.app/
 
